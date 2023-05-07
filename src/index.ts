@@ -15,10 +15,13 @@ app.use(errorHandler); // Handle errors
 app.post('/api/register', async (req: Request, res: Response) => {
   try {
     const { username, password } = req.body;
+    // console.log(password);
     const newUser = await registerUser(username, password);
     res.status(201).send(newUser);
-  } catch (error) {
-    res.status(400).send({ error: "error.message" });
+  } catch (err) {
+    console.log(err);
+    
+    res.status(400).send({ error: "err" });
   }
 });
 
