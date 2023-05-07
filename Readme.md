@@ -5,10 +5,10 @@ This API provides a Authentication system and all the CRUD operations for managi
 ## Getting Started (locally setup)
 
 1. Before using the API, make sure to install the required dependencies: ``` npm install ```
-2. Make sure you have ```mysql``` install if not then download the mysql from the official website and install, after that run the server and make sure you change the username and password in src/databse.ts
-3. To Start the server use the command : ```npm run dev```
+2. Ensure that ```MySQL``` is installed; if not, download ```MySQL``` from the official website and install it. Afterward, start the server and remember to update the username and password in src/database.ts.
+3. To start the server use the command : ```npm run dev```
 
-> The server will be running on http://localhost:3000
+> The server will be running on http://localhost:3000/
 
 ## Authentication
 
