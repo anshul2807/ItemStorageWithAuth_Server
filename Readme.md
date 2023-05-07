@@ -2,6 +2,8 @@
 
 This API provides a Authentication system and all the CRUD operations for managing items.
 
+> Deployment link : `https://mercury-simple-silicon.glitch.me/`
+
 ## Getting Started (locally setup)
 
 1. Before using the API, make sure to install the required dependencies: ``` npm install ```
