@@ -1,9 +1,9 @@
 import { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
 
-const SECRET_KEY = 'your-secret-key'; // This should be in an environment variable
+const SECRET_KEY = 'your-secret-key';
 
-// ... (errorHandler and requestLogger middlewares)
+
 
 export const authenticate = (req: Request, res: Response, next: NextFunction) => {
   const authHeader = req.headers.authorization;

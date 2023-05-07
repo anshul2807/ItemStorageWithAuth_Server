@@ -1,10 +1,9 @@
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcrypt';
 
-// Replace this with your own user model and database logic
 import { User } from './models/user';
 
-const SECRET_KEY = 'your-secret-key'; // This should be in an environment variable
+const SECRET_KEY = 'your-secret-key'; 
 
 export const registerUser = async (username: string, password: string) => {
   const hashedPassword = await bcrypt.hash(password, 10);

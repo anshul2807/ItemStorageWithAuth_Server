@@ -7,9 +7,9 @@ import { Item } from './models/item';
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(json()); // To parse JSON request bodies
-app.use(requestLogger); // Log incoming requests
-app.use(errorHandler); // Handle errors
+app.use(json()); 
+app.use(requestLogger);
+app.use(errorHandler); 
 
 // User registration endpoint
 app.post('/api/register', async (req: Request, res: Response) => {
@@ -36,7 +36,7 @@ app.post('/api/login', async (req: Request, res: Response) => {
   }
 });
 
-// CRUD endpoints for items (with authentication)
+// Endpoints for items (with authentication)
 app.post('/api/items', authenticate, async (req: Request, res: Response) => {
   try {
     const { name, description, price } = req.body;
